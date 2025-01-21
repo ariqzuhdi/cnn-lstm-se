@@ -1,5 +1,9 @@
 import pandas as pd
 
+def checker(csv):
+    df = pd.read_csv(csv)
+    print(df.isna().any().any())
+
 def filtering(csv):
     df = pd.read_csv(csv)
 
