@@ -7,16 +7,6 @@ def checker(csv):
 def filtering(csv):
     df = pd.read_csv(csv)
 
-    df_cleaned = df.dropna()
-
-    # Simpan hasil ke file CSV baru (atau timpa file lama)
-    if i == 1:
-        df_cleaned.to_csv('cleanup_data.csv', index=True)
-    else:
-        df_cleaned.to_csv('cleanup_data.csv', mode='a', header=False, index=True)
-
-    df = pd.read_csv('cleanup_data.csv')
-
     # Filter hanya baris dengan detik bernilai 0 (menunjukkan menit penuh)
     df_specified_MMSI = df[df['MMSI'] == 247320400]
 
