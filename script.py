@@ -25,3 +25,4 @@ for i in range(1, 32):
     else:
         filtering("AIS_2023_12_" + str(i) + ".csv")
         print("Succeed " + str(i))
+        

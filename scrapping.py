@@ -24,3 +24,4 @@ for i in range (1, 32):
     else:
         url = 'https://coast.noaa.gov/htdata/CMSP/AISDataHandler/2023/AIS_2023_12_'+ str[i] + '.zip'
         download_file(url)
+        
